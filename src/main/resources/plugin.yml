@@ -1,0 +1,110 @@
+name: LobsterCraft
+version: 0.1
+description: Private plugin for server
+
+main: com.jabyftw.lobstercraft.LobsterCraftPlugin
+author: rafael.sartori96@gmail.com
+depend: [Vault]
+softdepend: [ProtocolLib]
+
+commands:
+
+
+  login:
+    aliases: [l, entrar, signin, sign, entrar]
+  register:
+    aliases: [registrar, reg]
+  godmode:
+    aliases: god
+  gamemode:
+    aliases: gm
+  fly:
+    aliases: flight
+  teleport:
+    aliases: tp
+  teleporthere:
+    aliases: tphere
+  spawn:
+    description: dont know if I can remove every command attribute
+  spawnset:
+    aliases: setspawn
+  world:
+    aliases: world
+  give:
+    description: dont know if I can remove every command attribute
+  itens:
+    aliases: item
+  back:
+    aliases: [b, voltar]
+  heal:
+    aliases: curar
+  enchant:
+    aliases: [enchantment, encantar]
+  clearenchantment:
+    aliases: [desencantar, clearenchant, cenchant, cenchantment]
+  workbench:
+    description: dont know if I can remove every command attribute
+  list:
+    aliases: [players, jogadores, lista]
+  whisper:
+    aliases: [m, msg]
+  reply:
+    aliases: r
+  broadcast:
+    description: dont know if I can remove every command attribute
+  clear:
+    aliases: [cl, clearinventory]
+  suicide:
+    description: dont know if I can remove every command attribute
+  kill:
+    aliases: matar
+  killall:
+    description: dont know if I can remove every command attribute
+  spawnmob:
+    aliases: spawnmobs
+  mute:
+    description: dont know if I can remove every command attribute
+  adminmute:
+    aliases: [amute, admmute]
+  unmute:
+    description: dont know if I can remove every command attribute
+  adminunmute:
+    aliases: [aunmute, admunmute]
+  ptime:
+    aliases: tempo
+  pweather:
+    aliases: clima
+  repair:
+    aliases: [reparar, fix]
+  spyinv:
+    aliases: [invsee, inventory, inventario]
+  speed:
+    aliases: [flyspeed, walkspeed]
+  exp:
+    aliases: experience
+  level:
+    aliases: [leveis, levels, setlevel]
+  feed:
+    aliases: [eat, hunger]
+  hat:
+    aliases: chapeu
+  top:
+    description: dont know if I can remove every command attribute
+  changeusername:
+    aliases: [changeuser, mudarusuario, mudaruser, mudarnome, namechange, changename]
+  changepassword:
+    aliases: [changepass, mudarsenha, passwordchange, passchange, trocarsenha, changesenha]
+  buildmode:
+    aliases: [bm, blockmode]
+  kick:
+    aliases: [expulsar, kickar]
+  ban:
+    aliases: banir
+  banhistory:
+    aliases: [historico, banhistorico, banhist, banlist]
+  tempban:
+    aliases: [banirtemp, tempbanir]
+  exit:
+    aliases: [sair, fechar, close, stop, save-all]
+  city:
+    aliases: [cidade, cities, cidades, ct, casas, casa, home, homes]
