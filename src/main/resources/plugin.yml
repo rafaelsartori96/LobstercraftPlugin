@@ -2,7 +2,7 @@ name: LobsterCraft
 version: 0.1
 description: Private plugin for server
 
-main: com.jabyftw.lobstercraft.LobsterCraftPlugin
+main: com.jabyftw.lobstercraft.LobstercraftPlugin
 author: rafael.sartori96@gmail.com
 depend: [Vault]
 softdepend: [ProtocolLib]

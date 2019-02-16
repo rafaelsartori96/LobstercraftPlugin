@@ -98,7 +98,10 @@ public class LobstercraftPlugin extends JavaPlugin {
             /*
              * Attempt to register ProtocolLib
              */
-            protocolManager = ProtocolLibrary.getProtocolManager();
+            if (getServer().getPluginManager().isPluginEnabled("ProtocolLib"))
+                protocolManager = ProtocolLibrary.getProtocolManager();
+            else
+                getLogger().warning("Couldn't find ProtocolLib plugin!");
 
 
             /*
@@ -125,7 +128,10 @@ public class LobstercraftPlugin extends JavaPlugin {
             getLogger().severe("Failed to start essential plugin, stopping server. Cause: " + exception.getMessage());
             exception.printStackTrace();
             Bukkit.shutdown();
+            return;
         }
+
+        getLogger().info("LobsterCraft enabled!");
     }
 
     @Override
@@ -133,9 +139,10 @@ public class LobstercraftPlugin extends JavaPlugin {
         /*
          * Shutdown all services
          */
-        for (Service service : services) {
-            service.shutdown();
-        }
+        if (services != null)
+            for (Service service : services) {
+                service.shutdown();
+            }
 
 
         /*
@@ -156,14 +163,16 @@ public class LobstercraftPlugin extends JavaPlugin {
         /*
          * Stop ProtocolLib's integration
          */
-        protocolManager.removePacketListeners(this);
+        if (protocolManager != null)
+            protocolManager.removePacketListeners(this);
         protocolManager = null;
 
 
         /*
          * Stop MySQL connection pool
          */
-        mysqlPool.close();
+        if (mysqlPool != null)
+            mysqlPool.close();
         mysqlPool = null;
 
 

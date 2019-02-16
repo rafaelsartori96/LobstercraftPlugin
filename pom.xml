@@ -59,6 +59,15 @@
             <scope>compile</scope>
         </dependency>
 
+        <!-- MariaDB connector -->
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>2.4.0</version>
+            <scope>compile</scope>
+        </dependency>
+
+
         <!-- Vault plugin -->
         <dependency>
             <groupId>net.milkbowl.vault</groupId>

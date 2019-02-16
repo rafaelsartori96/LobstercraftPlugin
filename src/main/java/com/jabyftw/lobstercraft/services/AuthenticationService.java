@@ -5,7 +5,7 @@ import com.jabyftw.lobstercraft.LobstercraftPlugin;
 public class AuthenticationService implements Service {
 
     public boolean initialize() {
-        return false;
+        return true;
     }
 
     public void shutdown() {
